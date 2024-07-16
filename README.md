@@ -1,2 +1,3 @@
 # StudyCards
-Study Cards solutions
+
+Study Cards solution repository.
