@@ -9,7 +9,17 @@ const CourseSchema = new Schema({
     description: {
         type: String,
         required: false
-    }
+    },
+    topics: [{
+        type: Schema.Types.ObjectId,
+        ref: 'topic'
+    }]
+});
+
+CourseSchema.pre('deleteOne', {document: true}, function(next) {
+    const Topic = mongoose.model('topic');
+    Topic.deleteMany({_id: { $in : this.topics }})
+        .then(() => next());
 });
 
 const Course = mongoose.model('course', CourseSchema);

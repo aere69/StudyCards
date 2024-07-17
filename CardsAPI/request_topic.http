@@ -1,0 +1,32 @@
+###
+
+http://localhost:3050/api
+
+###
+
+http://localhost:3050/api/topics
+
+###
+
+POST http://localhost:3050/api/topics HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Azure Bastion"
+}
+
+###
+
+PUT http://localhost:3050/api/topics/6697f761c574e0d89cb891f6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Azure Bastion - 1",
+    "cards": [{ "title": "Card1 Title", "text": "Card1 Text"},
+              { "title": "Card2 Title", "text": "Card2 Text"}]
+}
+
+###
+
+DELETE http://localhost:3050/api/topics/6697f761c574e0d89cb891f6 HTTP/1.1
+Content-Type: application/json
