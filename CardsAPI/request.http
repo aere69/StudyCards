@@ -1,0 +1,32 @@
+###
+
+http://localhost:3050/api
+
+###
+
+http://localhost:3050/api/courses
+
+###
+
+POST http://localhost:3050/api/courses HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "AZ-700 : AZURE NETWORK ENGINEER ASSOCIATE",
+    "description": "As an Azure network engineer your responsibilities include optimizing performance, resiliency, scale, and security of Azure networking solutions. You proactively monitor network environments to identify issues and minimize risk. You also identify and resolve connectivity issues."
+}
+
+###
+
+PUT http://localhost:3050/api/courses/6697ac3092cb6d7db6a993e8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "AZ-700 | AZURE NETWORK ENGINEER ASSOCIATE",
+    "description": "As an Azure network engineer your responsibilities include optimizing performance, resiliency, scale, and security of Azure networking solutions. You proactively monitor network environments to identify issues and minimize risk. You also identify and resolve connectivity issues. Demonstrate the design, implementation, and maintenance of Azure networking infrastructure, load balancing traffic, network routing, and more."
+}
+
+###
+
+DELETE http://localhost:3050/api/courses/6697c8f893b1aedd0a4516f3 HTTP/1.1
+Content-Type: application/json
