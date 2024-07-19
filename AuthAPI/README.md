@@ -6,7 +6,7 @@ Using :
 
 - **Database**: MongoDB (mongoose)
 - **Test Framework**: mocha | supertest
-- **Tools**: nodemon | body-parser | jsonwebtoken
+- **Tools**: nodemon | body-parser | jsonwebtoken | bcrypt
 - **Web Application**: express
 
 ## Install
