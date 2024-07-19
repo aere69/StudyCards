@@ -1,0 +1,22 @@
+{
+  "name": "authapi",
+  "version": "1.0.0",
+  "description": "JWT AuthAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET NODE_ENV=test& nodemon --exec \"mocha --recursive -R min\"",
+    "start": "nodemon index.js"
+  },
+  "author": "Andres E. Rojas Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.6.0",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
